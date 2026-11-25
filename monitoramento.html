@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pontos de coleta | EcoCidade Bio</title>
+  <meta name="description" content="Escolha um ponto do Córrego das Palmeiras e veja pH, turbidez, oxigênio dissolvido e temperatura, com o que cada número quer dizer.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2044%2044%22%3E%3Crect%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%2210%22%20fill%3D%22%231351b4%22%2F%3E%3Cpath%20d%3D%22M22%207.5c5%205.2%207.2%209%207.2%2011.9a7.2%207.2%200%200%201-14.4%200c0-2.9%202.2-6.7%207.2-11.9z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M7%2033c3.6-3.2%206.4-3.2%209.6%200s6%203.2%209.6%200%206.4-3.2%209.8%200%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.4%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="monitoramento">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="app">
+    <header class="sidebar" data-open="false">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect width="44" height="44" rx="10" fill="#1351b4"/><path d="M22 7.5c5 5.2 7.2 9 7.2 11.9a7.2 7.2 0 0 1-14.4 0c0-2.9 2.2-6.7 7.2-11.9z" fill="#fff"/><path d="M7 31.5c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M7 37c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#9ec2f0" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="brand-text"><span class="brand-name">EcoCidade Bio</span><span class="brand-sub">Córrego das Palmeiras</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-gaveta">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h16M4 12h16M4 17.5h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+
+      <div id="menu-gaveta" class="sidebar-body">
+        <nav class="side-nav" aria-label="Menu principal">
+          <ul>
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Painel</span></a></li>
+          <li><a href="monitoramento.html" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Pontos de coleta</span></a></li>
+          <li><a href="historico.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15l3.5-4 3 2.5L19 8"/></svg><span>Gráficos</span></a></li>
+          <li><a href="biotecnologia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c0 4 10 5 10 9s-10 5-10 9"/><path d="M17 3c0 4-10 5-10 9s10 5 10 9"/><path d="M8.6 6.5h6.8M8.6 17.5h6.8"/></svg><span>DNA na água</span></a></li>
+          <li><a href="aprenda.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6v.4"/><path d="M12 17h.01"/></svg><span>Guia e dúvidas</span></a></li>
+          </ul>
+          <ul class="side-nav-action">
+          <li><a class="nav-cta" href="ocorrencia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4A1.5 1.5 0 0 1 4 14.5z"/><path d="M12 7.5v4"/><path d="M12 13.8h.01"/></svg><span>Avisar um problema</span></a></li>
+          </ul>
+          <ul class="side-nav-more">
+          <li><a href="sobre.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg><span>Sobre os dados</span></a></li>
+          <li><a href="admin.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></svg><span>Área do agente</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="reading-tools" role="group" aria-labelledby="rt-titulo">
+          <p id="rt-titulo" class="rt-title">Ajustar a leitura</p>
+          <div class="rt-row">
+            <button type="button" data-acao="fonte-menos" aria-label="Diminuir o texto">A−</button>
+            <button type="button" data-acao="fonte-mais" aria-label="Aumentar o texto">A+</button>
+            <button type="button" data-acao="contraste" aria-pressed="false">Alto contraste</button>
+          </div>
+          <span id="pref-status" class="visually-hidden" role="status"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-main">
+      <div class="proto-line" role="region" aria-label="Aviso sobre o protótipo">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="7.6" r="1.4" fill="currentColor"/></svg>
+        <p><strong>Protótipo acadêmico.</strong> Os dados são simulados e a cidade é fictícia: nada aqui é diagnóstico ambiental oficial.</p>
+      </div>
+
+      <main id="conteudo" tabindex="-1">
+<div class="page">
+  <header class="page-top">
+    <h1>Como está a água em cada ponto?</h1>
+    <p class="page-sub">Escolha o ponto e a data. Mostramos os números, o que eles querem dizer e o que está sendo feito.</p>
+  </header>
+
+  <div id="param-warning" class="callout caution" role="alert" hidden></div>
+  <p id="live" class="visually-hidden" role="status" aria-live="polite"></p>
+
+  <form id="filtro-ponto" class="toolbar" aria-label="Escolher ponto e data" onsubmit="return false">
+    <fieldset class="point-tabs">
+      <legend>Qual ponto você quer ver?</legend>
+      <div class="point-tabs-row">
+        <label><input type="radio" name="ponto" value="P1" checked><span class="pt-name"><strong>P1</strong> Nascente</span><span id="rail-status-P1"></span></label>
+        <label><input type="radio" name="ponto" value="P2"><span class="pt-name"><strong>P2</strong> Trecho urbano</span><span id="rail-status-P2"></span></label>
+        <label><input type="radio" name="ponto" value="P3"><span class="pt-name"><strong>P3</strong> Trecho industrial</span><span id="rail-status-P3"></span></label>
+      </div>
+    </fieldset>
+    <div class="field">
+      <label for="sel-data">De qual dia?</label>
+      <select id="sel-data"></select>
+    </div>
+  </form>
+
+  <section aria-labelledby="ponto-titulo">
+    <div class="point-head">
+      <h2 id="ponto-titulo">P1 — Nascente</h2>
+      <p id="ponto-desc"></p>
+    </div>
+    <div id="verdict" class="verdict"></div>
+
+    <h3 class="sub-h">Os números desta medição</h3>
+    <div id="readings" class="reading-grid"></div>
+  </section>
+
+  <section class="panel block" aria-labelledby="hist-titulo">
+      <div class="panel-head">
+        <h2 id="hist-titulo">E nas outras semanas?</h2>
+        <a class="panel-link" href="historico.html">Ver nos gráficos</a>
+      </div>
+      <div class="table-wrap" role="region" aria-labelledby="hist-caption" tabindex="0">
+        <table class="table-stack">
+          <caption id="hist-caption">Todas as medições do ponto<small><span class="arrow-up" aria-hidden="true"></span> acima do limite · <span class="arrow-down" aria-hidden="true"></span> abaixo do limite · temperatura simulada pelo grupo</small></caption>
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col" class="num">pH</th>
+              <th scope="col" class="num">Turbidez (NTU)</th>
+              <th scope="col" class="num">Oxigênio (mg/L)</th>
+              <th scope="col" class="num">Temperatura (°C)</th>
+              <th scope="col">Classificação</th>
+            </tr>
+          </thead>
+          <tbody id="hist-body"></tbody>
+        </table>
+      </div>
+  </section>
+
+  <div class="dash-grid dash-grid-even">
+      <section class="panel" aria-labelledby="edna-titulo">
+        <h2 id="edna-titulo">E o DNA na água daqui?</h2>
+        <div id="edna-mini"></div>
+      </section>
+      <section class="panel" aria-labelledby="regra-titulo">
+        <h2 id="regra-titulo">Como decidimos o alerta?</h2>
+        <p>Olhamos três números e contamos quantos passaram do limite:</p>
+        <ul>
+          <li><strong>nenhum:</strong> Sem alerta;</li>
+          <li><strong>um:</strong> Atenção;</li>
+          <li><strong>dois ou três:</strong> Prioridade de investigação.</li>
+        </ul>
+        <p class="small muted">Limites: pH abaixo de 6,0 ou acima de 9,0; turbidez acima de 25 NTU; oxigênio abaixo de 5,0 mg/L. A temperatura não entra na conta.</p>
+        <a class="go" href="sobre.html#metodologia">Ver o cálculo completo</a>
+      </section>
+  </div>
+
+  <section class="panel block" aria-labelledby="alertas-titulo">
+    <div class="panel-head">
+      <h2 id="alertas-titulo">Os três pontos lado a lado</h2>
+    </div>
+    <div class="table-wrap" role="region" aria-labelledby="alertas-cap" tabindex="0">
+      <table class="table-stack">
+        <caption id="alertas-cap">Situação em <span id="alert-date"></span>, do ponto que mais preocupa ao que menos preocupa</caption>
+        <thead><tr><th scope="col">Ponto</th><th scope="col">Classificação</th><th scope="col" class="num">Limites ultrapassados</th><th scope="col">O que passou do limite</th></tr></thead>
+        <tbody id="alerts-body"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="footer-cols">
+          <div>
+            <h2>Quem fez</h2>
+            <p>EcoCidade Bio é um protótipo criado no Projeto Final da disciplina Meio Ambiente, Sustentabilidade e Informática (SPOMASI), IFSP, 2026. Santa Aurora, o córrego e a prefeitura são fictícios.</p>
+          </div>
+          <div>
+            <h2>Transparência</h2>
+            <ul>
+              <li><a href="sobre.html#metodologia">Como o alerta é calculado</a></li>
+              <li><a href="sobre.html#privacidade">O que fazemos com seus dados (LGPD)</a></li>
+              <li><a href="sobre.html#acessibilidade">Acessibilidade do site</a></li>
+              <li><a href="sobre.html#sustentabilidade">Quanto este site consome</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Está sem internet?</h2>
+            <p>Você também pode avisar um problema na Secretaria de Meio Ambiente (fictícia) ou pela central telefônica da prefeitura. Todos os canais caem no mesmo sistema.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

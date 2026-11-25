@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel | EcoCidade Bio</title>
+  <meta name="description" content="Veja como está a água do Córrego das Palmeiras hoje, ponto a ponto, e o que os moradores avisaram.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2044%2044%22%3E%3Crect%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%2210%22%20fill%3D%22%231351b4%22%2F%3E%3Cpath%20d%3D%22M22%207.5c5%205.2%207.2%209%207.2%2011.9a7.2%207.2%200%200%201-14.4%200c0-2.9%202.2-6.7%207.2-11.9z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M7%2033c3.6-3.2%206.4-3.2%209.6%200s6%203.2%209.6%200%206.4-3.2%209.8%200%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.4%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="inicio">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="app">
+    <header class="sidebar" data-open="false">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect width="44" height="44" rx="10" fill="#1351b4"/><path d="M22 7.5c5 5.2 7.2 9 7.2 11.9a7.2 7.2 0 0 1-14.4 0c0-2.9 2.2-6.7 7.2-11.9z" fill="#fff"/><path d="M7 31.5c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M7 37c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#9ec2f0" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="brand-text"><span class="brand-name">EcoCidade Bio</span><span class="brand-sub">Córrego das Palmeiras</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-gaveta">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h16M4 12h16M4 17.5h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+
+      <div id="menu-gaveta" class="sidebar-body">
+        <nav class="side-nav" aria-label="Menu principal">
+          <ul>
+          <li><a href="index.html" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Painel</span></a></li>
+          <li><a href="monitoramento.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Pontos de coleta</span></a></li>
+          <li><a href="historico.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15l3.5-4 3 2.5L19 8"/></svg><span>Gráficos</span></a></li>
+          <li><a href="biotecnologia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c0 4 10 5 10 9s-10 5-10 9"/><path d="M17 3c0 4-10 5-10 9s10 5 10 9"/><path d="M8.6 6.5h6.8M8.6 17.5h6.8"/></svg><span>DNA na água</span></a></li>
+          <li><a href="aprenda.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6v.4"/><path d="M12 17h.01"/></svg><span>Guia e dúvidas</span></a></li>
+          </ul>
+          <ul class="side-nav-action">
+          <li><a class="nav-cta" href="ocorrencia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4A1.5 1.5 0 0 1 4 14.5z"/><path d="M12 7.5v4"/><path d="M12 13.8h.01"/></svg><span>Avisar um problema</span></a></li>
+          </ul>
+          <ul class="side-nav-more">
+          <li><a href="sobre.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg><span>Sobre os dados</span></a></li>
+          <li><a href="admin.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></svg><span>Área do agente</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="reading-tools" role="group" aria-labelledby="rt-titulo">
+          <p id="rt-titulo" class="rt-title">Ajustar a leitura</p>
+          <div class="rt-row">
+            <button type="button" data-acao="fonte-menos" aria-label="Diminuir o texto">A−</button>
+            <button type="button" data-acao="fonte-mais" aria-label="Aumentar o texto">A+</button>
+            <button type="button" data-acao="contraste" aria-pressed="false">Alto contraste</button>
+          </div>
+          <span id="pref-status" class="visually-hidden" role="status"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-main">
+      <div class="proto-line" role="region" aria-label="Aviso sobre o protótipo">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="7.6" r="1.4" fill="currentColor"/></svg>
+        <p><strong>Protótipo acadêmico.</strong> Os dados são simulados e a cidade é fictícia: nada aqui é diagnóstico ambiental oficial.</p>
+      </div>
+
+      <main id="conteudo" tabindex="-1">
+<div class="page">
+  <header class="page-top">
+    <h1>Como está o córrego hoje?</h1>
+    <p class="page-sub">Córrego das Palmeiras, em Santa Aurora. Medições semanais de 02/10 a 16/10/2026.</p>
+  </header>
+
+  <section aria-labelledby="resposta-titulo">
+    <h2 id="resposta-titulo" class="visually-hidden">Resposta rápida</h2>
+    <div id="home-summary" class="answer-box" role="status">
+      <p class="answer-text">Carregando a situação dos pontos…</p>
+    </div>
+  </section>
+
+  <section class="flow-section" aria-labelledby="flow-titulo">
+    <div class="flow-head">
+      <h2 id="flow-titulo">Ponto a ponto, no sentido da água</h2>
+      <a class="go" href="aprenda.html#classificacao">Como decidimos o alerta?</a>
+    </div>
+    <p class="flow-lead">A água nasce perto do P1, passa pelas casas no P2 e chega ao trecho industrial no P3.</p>
+    <ol id="point-cards" class="flow">
+      <li><p>Não conseguimos carregar os pontos agora. Tente a página <a href="monitoramento.html">Pontos de coleta</a>.</p></li>
+    </ol>
+  </section>
+
+  <div class="dash-grid dash-grid-stretch">
+    <div class="side-stack">
+    <section class="panel" aria-labelledby="mapa-titulo-h">
+      <div class="panel-head">
+        <h2 id="mapa-titulo-h">Onde ficam os pontos</h2>
+      </div>
+      <figure class="stream-map">
+        <svg viewBox="0 0 520 300" role="group" aria-labelledby="mapa-titulo mapa-desc">
+          <title id="mapa-titulo">Mapa esquemático do Córrego das Palmeiras</title>
+          <desc id="mapa-desc">O córrego corre da nascente (P1), passa pela área residencial (P2) e chega ao trecho a jusante da área industrial fictícia (P3). Cada ponto é um link para seus detalhes.</desc>
+          <rect x="0" y="0" width="170" height="300" fill="#e3f5e1"/>
+          <rect x="170" y="0" width="185" height="300" fill="#f1f1f1"/>
+          <rect x="355" y="0" width="165" height="300" fill="#ecebf4"/>
+          <g fill="#d3d3d3" aria-hidden="true">
+            <rect x="190" y="30" width="34" height="26" rx="3"/><rect x="232" y="30" width="34" height="26" rx="3"/><rect x="274" y="30" width="34" height="26" rx="3"/>
+            <rect x="190" y="230" width="34" height="26" rx="3"/><rect x="232" y="230" width="34" height="26" rx="3"/><rect x="300" y="252" width="34" height="26" rx="3"/>
+          </g>
+          <g fill="#c9c3dc" aria-hidden="true">
+            <path d="M372 40h40v-14l18 10V26l18 10v-10l18 10v34h-94z"/>
+            <rect x="472" y="20" width="10" height="26"/>
+          </g>
+          <g fill="#9ccf95" aria-hidden="true">
+            <circle cx="30" cy="30" r="13"/><circle cx="55" cy="22" r="10"/><circle cx="130" cy="250" r="14"/><circle cx="40" cy="240" r="11"/><circle cx="150" cy="40" r="9"/>
+          </g>
+          <text x="12" y="290" class="zone-label" fill="#0f6b1a">NASCENTE</text>
+          <text x="182" y="290" class="zone-label" fill="#555555">ÁREA RESIDENCIAL</text>
+          <text x="365" y="290" class="zone-label" fill="#4f437a">ÁREA INDUSTRIAL</text>
+          <path d="M20 92 C 90 92, 120 150, 200 158 S 330 168, 380 205 S 470 240, 520 238" fill="none" stroke="#6f9fe0" stroke-width="22" stroke-linecap="round" aria-hidden="true"/>
+          <path d="M20 92 C 90 92, 120 150, 200 158 S 330 168, 380 205 S 470 240, 520 238" fill="none" stroke="#bcd3f4" stroke-width="10" stroke-linecap="round" aria-hidden="true"/>
+          <g aria-hidden="true" class="flow-label" fill="#0c4aa6" font-size="12" font-weight="700"><text x="226" y="140">sentido da água</text><path d="M326 136h15m-5-4.5 5 4.5-5 4.5" fill="none" stroke="#0c4aa6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+          <a id="map-link-P1" href="monitoramento.html?ponto=P1">
+            <circle class="pin-hit" cx="92" cy="106" r="28"/>
+            <circle id="map-pin-P1" class="pin-ring" cx="92" cy="106" r="17" stroke-width="3"/>
+            <text x="92" y="111" text-anchor="middle" class="pin-label">P1</text>
+            <text x="92" y="146" text-anchor="middle" class="pin-sub" id="map-status-P1"></text>
+          </a>
+          <a id="map-link-P2" href="monitoramento.html?ponto=P2">
+            <circle class="pin-hit" cx="262" cy="163" r="28"/>
+            <circle id="map-pin-P2" class="pin-ring" cx="262" cy="163" r="17" stroke-width="3"/>
+            <text x="262" y="168" text-anchor="middle" class="pin-label">P2</text>
+            <text x="262" y="204" text-anchor="middle" class="pin-sub" id="map-status-P2"></text>
+          </a>
+          <a id="map-link-P3" href="monitoramento.html?ponto=P3">
+            <circle class="pin-hit" cx="432" cy="219" r="28"/>
+            <circle id="map-pin-P3" class="pin-ring" cx="432" cy="219" r="17" stroke-width="3"/>
+            <text x="432" y="224" text-anchor="middle" class="pin-label">P3</text>
+            <text x="432" y="182" text-anchor="middle" class="pin-sub" id="map-status-P3"></text>
+          </a>
+        </svg>
+        <figcaption>Da esquerda para a direita: nascente (P1), área residencial (P2) e área industrial (P3). Desenho fora de escala; toque num ponto para abrir os detalhes. As mesmas informações estão nos quadros acima.</figcaption>
+      </figure>
+    </section>
+
+    <section class="callout note" aria-labelledby="cuidado-titulo">
+      <h2 id="cuidado-titulo">Antes de usar estes números</h2>
+      <ul>
+        <li>Todos os valores são <strong>simulados</strong>, para fins de estudo. Eles não dizem se a água é própria para beber, nadar ou pescar.</li>
+        <li>Os limites de alerta são um exercício da lógica do sistema, não critérios legais de qualidade da água.</li>
+        <li>A temperatura foi simulada pelo grupo para completar a base e não entra no alerta.</li>
+      </ul>
+    </section>
+    </div>
+
+    <section class="panel" aria-labelledby="avisos-titulo">
+      <div class="panel-head">
+        <h2 id="avisos-titulo">O que os vizinhos avisaram</h2>
+      </div>
+      <ul id="recent-list" class="recent-list">
+        <li>Não conseguimos carregar os avisos agora.</li>
+      </ul>
+      <div class="panel-foot">
+        <div class="foot-ask">
+          <p><strong>Viu algo diferente no córrego?</strong> Leva uns 2 minutos e não precisa se identificar.</p>
+          <a class="btn btn-secondary" href="ocorrencia.html">Avisar um problema</a>
+        </div>
+        <p class="panel-note">Os avisos marcados como “demo” são fictícios, de demonstração. Os que você enviar aparecem aqui, só neste navegador.</p>
+      </div>
+    </section>
+  </div>
+
+  <section class="panel block" aria-labelledby="perguntas-titulo">
+      <div class="panel-head">
+        <h2 id="perguntas-titulo">Perguntas que a gente mais recebe</h2>
+        <a class="panel-link" href="aprenda.html#perguntas">Ver todas</a>
+      </div>
+      <dl class="qa qa-cols">
+        <div><dt>Posso nadar, pescar ou beber essa água?</dt>
+        <dd>Este site não consegue responder isso. Os dados são simulados e os limites são didáticos. Só uma avaliação oficial, com normas e coletas próprias, pode dizer para que a água serve.</dd></div>
+        <div><dt>O que está sendo feito onde há alerta?</dt>
+        <dd>Onde dois ou três limites passaram do ponto, a equipe ambiental programa vistoria de campo e nova coleta. Onde só um passou, o trecho fica em observação na próxima medição.</dd></div>
+        <div><dt>A área industrial perto do P3 é a culpada?</dt>
+        <dd>Não dá para afirmar. Estar perto de uma indústria ou de casas não comprova de onde veio a poluição. Isso só se descobre investigando a fonte.</dd></div>
+      </dl>
+  </section>
+
+</div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="footer-cols">
+          <div>
+            <h2>Quem fez</h2>
+            <p>EcoCidade Bio é um protótipo criado no Projeto Final da disciplina Meio Ambiente, Sustentabilidade e Informática (SPOMASI), IFSP, 2026. Santa Aurora, o córrego e a prefeitura são fictícios.</p>
+          </div>
+          <div>
+            <h2>Transparência</h2>
+            <ul>
+              <li><a href="sobre.html#metodologia">Como o alerta é calculado</a></li>
+              <li><a href="sobre.html#privacidade">O que fazemos com seus dados (LGPD)</a></li>
+              <li><a href="sobre.html#acessibilidade">Acessibilidade do site</a></li>
+              <li><a href="sobre.html#sustentabilidade">Quanto este site consome</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Está sem internet?</h2>
+            <p>Você também pode avisar um problema na Secretaria de Meio Ambiente (fictícia) ou pela central telefônica da prefeitura. Todos os canais caem no mesmo sistema.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

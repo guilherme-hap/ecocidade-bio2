@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNA na água | EcoCidade Bio</title>
+  <meta name="description" content="O que o DNA ambiental (eDNA) encontrado no Córrego das Palmeiras revela, como ler os resultados simulados e até onde dá para concluir.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2044%2044%22%3E%3Crect%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%2210%22%20fill%3D%22%231351b4%22%2F%3E%3Cpath%20d%3D%22M22%207.5c5%205.2%207.2%209%207.2%2011.9a7.2%207.2%200%200%201-14.4%200c0-2.9%202.2-6.7%207.2-11.9z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M7%2033c3.6-3.2%206.4-3.2%209.6%200s6%203.2%209.6%200%206.4-3.2%209.8%200%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.4%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="biotecnologia">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="app">
+    <header class="sidebar" data-open="false">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect width="44" height="44" rx="10" fill="#1351b4"/><path d="M22 7.5c5 5.2 7.2 9 7.2 11.9a7.2 7.2 0 0 1-14.4 0c0-2.9 2.2-6.7 7.2-11.9z" fill="#fff"/><path d="M7 31.5c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M7 37c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#9ec2f0" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="brand-text"><span class="brand-name">EcoCidade Bio</span><span class="brand-sub">Córrego das Palmeiras</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-gaveta">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h16M4 12h16M4 17.5h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+
+      <div id="menu-gaveta" class="sidebar-body">
+        <nav class="side-nav" aria-label="Menu principal">
+          <ul>
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Painel</span></a></li>
+          <li><a href="monitoramento.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Pontos de coleta</span></a></li>
+          <li><a href="historico.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15l3.5-4 3 2.5L19 8"/></svg><span>Gráficos</span></a></li>
+          <li><a href="biotecnologia.html" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c0 4 10 5 10 9s-10 5-10 9"/><path d="M17 3c0 4-10 5-10 9s10 5 10 9"/><path d="M8.6 6.5h6.8M8.6 17.5h6.8"/></svg><span>DNA na água</span></a></li>
+          <li><a href="aprenda.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6v.4"/><path d="M12 17h.01"/></svg><span>Guia e dúvidas</span></a></li>
+          </ul>
+          <ul class="side-nav-action">
+          <li><a class="nav-cta" href="ocorrencia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4A1.5 1.5 0 0 1 4 14.5z"/><path d="M12 7.5v4"/><path d="M12 13.8h.01"/></svg><span>Avisar um problema</span></a></li>
+          </ul>
+          <ul class="side-nav-more">
+          <li><a href="sobre.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg><span>Sobre os dados</span></a></li>
+          <li><a href="admin.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></svg><span>Área do agente</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="reading-tools" role="group" aria-labelledby="rt-titulo">
+          <p id="rt-titulo" class="rt-title">Ajustar a leitura</p>
+          <div class="rt-row">
+            <button type="button" data-acao="fonte-menos" aria-label="Diminuir o texto">A−</button>
+            <button type="button" data-acao="fonte-mais" aria-label="Aumentar o texto">A+</button>
+            <button type="button" data-acao="contraste" aria-pressed="false">Alto contraste</button>
+          </div>
+          <span id="pref-status" class="visually-hidden" role="status"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-main">
+      <div class="proto-line" role="region" aria-label="Aviso sobre o protótipo">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="7.6" r="1.4" fill="currentColor"/></svg>
+        <p><strong>Protótipo acadêmico.</strong> Os dados são simulados e a cidade é fictícia: nada aqui é diagnóstico ambiental oficial.</p>
+      </div>
+
+      <main id="conteudo" tabindex="-1">
+<div class="page">
+  <header class="page-top">
+    <h1>Que vida o DNA na água revela?</h1>
+    <p class="page-sub">Peixes, algas e microrganismos deixam pedacinhos de DNA na água. Um laboratório parceiro (fictício) procurou esses vestígios nos três pontos. Veja o que ele achou e até onde dá para concluir.</p>
+  </header>
+
+  <nav class="jump" aria-label="Nesta página">
+    <ul>
+      <li><a href="#res-titulo">O que o laboratório achou?</a></li>
+      <li><a href="#int-titulo">O que isso quer dizer em cada ponto?</a></li>
+      <li><a href="#tipos-titulo">Cada número responde a quê?</a></li>
+      <li><a href="#fluxo-titulo">Como a amostra vira resultado?</a></li>
+      <li><a href="#saber-titulo">A biotecnologia pode ajudar?</a></li>
+      <li><a href="#dec-titulo">O que não dá para concluir?</a></li>
+    </ul>
+  </nav>
+
+  <div class="doc">
+    <section class="panel-inset" aria-labelledby="etiquetas-titulo">
+      <h2 id="etiquetas-titulo" class="h-small">Como ler as etiquetas desta página</h2>
+      <ul class="evidence-legend">
+        <li><span class="tag">resultado simulado</span> dado fictício do estudo de caso</li>
+        <li><span class="tag">interpretação</span> leitura que a equipe fez a partir dos dados</li>
+        <li><span class="tag">evidência científica</span> conhecimento já publicado em pesquisas</li>
+        <li><span class="tag">hipótese</span> possibilidade que ainda precisa ser testada</li>
+      </ul>
+    </section>
+
+    <section class="doc-section block" aria-labelledby="res-titulo">
+      <h2 id="res-titulo">O que o laboratório achou? <span class="tag">resultado simulado</span></h2>
+      <p>O laboratório procurou dois sinais em cada ponto: DNA de peixes nativos e DNA de cianobactérias.</p>
+      <div class="table-wrap" role="region" aria-labelledby="edna-cap" tabindex="0">
+        <table class="table-stack">
+          <caption id="edna-cap">Marcadores de DNA ambiental por ponto<small><span class="legend-icon info"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg></span> detectado · <span class="legend-icon neutral"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span> não detectado · <span class="legend-icon warn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 2.4"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17" r="1.3" fill="currentColor"/></svg></span> indeterminado (a análise precisa ser repetida)</small></caption>
+          <thead><tr><th scope="col">Ponto</th><th scope="col">Marcador de peixe nativo</th><th scope="col">Marcador de cianobactéria</th><th scope="col">Data da coleta</th></tr></thead>
+          <tbody id="edna-body"></tbody>
+        </table>
+      </div>
+      <div class="callout note block">
+        <h3>O que o DNA não diz sozinho <span class="tag">evidência científica</span></h3>
+        <p>Achar DNA de um organismo não prova que ele estava vivo na hora da coleta, quantos existem nem se havia produção de toxinas. O DNA pode ter descido de trechos acima no córrego. E não achar DNA também não prova que o organismo não está lá.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="int-titulo">
+      <h2 id="int-titulo">O que isso quer dizer em cada ponto?</h2>
+      <p>Aqui juntamos o resultado do DNA com os números da última medição (16/10/2026).</p>
+      <div id="integrated" class="point-dna">
+        <p>Não conseguimos carregar esta comparação agora.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="tipos-titulo">
+      <h2 id="tipos-titulo">Cada número responde a quê?</h2>
+      <p>Os indicadores do córrego se dividem em três tipos, e cada tipo responde a uma pergunta diferente.</p>
+      <div class="panel">
+        <div class="three-col">
+          <div>
+            <h3>Físicos</h3>
+            <p>O que se mede sem reação química: <strong>turbidez</strong> e <strong>temperatura</strong>.</p>
+            <p class="ask">“A água está turva? Está mais quente?”</p>
+          </div>
+          <div>
+            <h3>Químicos</h3>
+            <p>Substâncias e reações na água: <strong>pH</strong> e <strong>oxigênio dissolvido</strong>.</p>
+            <p class="ask">“A água está ácida? Tem oxigênio para os peixes?”</p>
+          </div>
+          <div>
+            <h3>Biológicos</h3>
+            <p>Seres vivos ou seus vestígios: <strong>DNA de peixe nativo</strong> e de <strong>cianobactéria</strong>.</p>
+            <p class="ask">“Quem vive, ou viveu, neste trecho?”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="fluxo-titulo">
+      <h2 id="fluxo-titulo">Como a amostra vira resultado?</h2>
+      <p>Do frasco de água até esta tela, são sete passos.</p>
+      <ol class="steps">
+        <li><strong>Coleta da água</strong><span class="who">A equipe de campo usa frascos limpos e leva junto um controle negativo (água pura) para perceber se algo contaminou a amostra.</span></li>
+        <li><strong>Filtração e preservação</strong><span class="who">A água passa por um filtro que segura células e pedaços de DNA.</span></li>
+        <li><strong>Extração do DNA</strong><span class="who">O laboratório separa o DNA do resto do material que ficou no filtro.</span></li>
+        <li><strong>Amplificação por PCR</strong><span class="who">Trechos específicos do DNA (os marcadores) são copiados muitas vezes até dar para detectar. Depois pode vir o sequenciamento.</span></li>
+        <li><strong>Bioinformática</strong><span class="who">Programas conferem a qualidade e comparam as sequências com bancos de referência, como o GenBank, usando ferramentas como o BLAST.</span></li>
+        <li><strong>Laudo em arquivo padronizado</strong><span class="who">O laboratório manda um arquivo CSV com ponto, marcador, resultado, método e data. O sistema confere o formato e grava na tabela de resultados.</span></li>
+        <li><strong>Publicação explicada</strong><span class="who">A plataforma mostra o resultado em palavras simples e com os limites de interpretação, como nesta página.</span></li>
+      </ol>
+    </section>
+
+    <section class="doc-section" aria-labelledby="saber-titulo">
+      <h2 id="saber-titulo">A biotecnologia pode ajudar o córrego?</h2>
+      <p>Pode, de várias formas. Abra cada pergunta para saber mais.</p>
+
+      <details class="disclosure">
+        <summary>Dá para medir a água com ajuda da biologia? (biossensores)</summary>
+        <div class="disclosure-body">
+          <p><span class="tag">evidência científica</span> Um biossensor junta uma parte biológica que reconhece algo (enzima, anticorpo, fita de DNA ou célula) a um transdutor, que transforma esse reconhecimento em sinal elétrico ou óptico.</p>
+          <p><span class="tag">hipótese</span> No Córrego das Palmeiras, biossensores poderiam complementar as sondas de pH e oxigênio, por exemplo avisando sobre toxinas de cianobactérias antes da análise completa no laboratório. Eles precisariam de validação em campo, calibração e manutenção.</p>
+        </div>
+      </details>
+
+      <details class="disclosure">
+        <summary>Plantas podem limpar a água? (wetlands construídos)</summary>
+        <div class="disclosure-body">
+          <p><span class="tag">evidência científica</span> Wetlands construídos, ou jardins filtrantes, são áreas alagadas planejadas com plantas aquáticas (macrófitas) e substrato. As raízes e os microrganismos que vivem nelas seguram partículas, decompõem matéria orgânica e absorvem nutrientes.</p>
+          <p><span class="tag">hipótese</span> Um wetland antes do P3, ou nas drenagens que chegam ao P2, poderia ajudar a reduzir a turbidez e a matéria orgânica, o que favorece o oxigênio dissolvido.</p>
+          <p><strong>Limites:</strong> precisa de espaço e de manutenção (poda e destino das plantas), pode não tratar alguns poluentes industriais e não substitui o controle na fonte, como a fiscalização de lançamentos e a coleta de esgoto.</p>
+        </div>
+      </details>
+
+      <details class="disclosure">
+        <summary>E os organismos geneticamente modificados (OGMs)?</summary>
+        <div class="disclosure-body">
+          <p><span class="tag">evidência científica</span> A engenharia genética altera diretamente o DNA de um organismo. Com ela é possível, por exemplo, produzir insulina humana em microrganismos ou criar bactérias que dão sinal quando encontram um poluente.</p>
+          <p><strong>Riscos que precisam ser avaliados caso a caso:</strong> o organismo sobreviver e se espalhar no ambiente, passar genes para outros organismos e afetar o ecossistema. Por isso, no Brasil, atividades com OGMs seguem a Lei de Biossegurança (Lei nº 11.105/2005) e a avaliação da CTNBio.</p>
+          <p>Esta plataforma não propõe soltar OGMs no córrego. A biorremediação sugerida usa plantas e microrganismos nativos.</p>
+        </div>
+      </details>
+
+      <details class="disclosure">
+        <summary>O exame de DNA da água é parecido com o do hospital?</summary>
+        <div class="disclosure-body">
+          <p>Sim. A mesma técnica de PCR que identifica DNA de peixes na água é usada em hospitais para detectar vírus e bactérias em pacientes. Muda o contexto: o exame clínico é lido junto com sintomas e histórico; o resultado ambiental é lido junto com as medições, o local e a época da coleta.</p>
+          <p>Nos dois casos, achar material genético não quer dizer, automaticamente, doença ativa ou organismo vivo.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="doc-section callout note" aria-labelledby="dec-titulo">
+      <h2 id="dec-titulo">O que não dá para concluir só com estes dados?</h2>
+      <ul>
+        <li>Se a água é própria ou imprópria para beber, tomar banho ou pescar.</li>
+        <li>Que uma indústria específica é responsável pela poluição do P3 (seria preciso investigar lançamentos, vazões e amostras na fonte).</li>
+        <li>Que há toxinas de cianobactérias (isso exige análise química das toxinas).</li>
+        <li>Que os peixes nativos sumiram do P3 (isso exige repetir as coletas e usar outros métodos).</li>
+        <li>Qual obra de biorremediação fazer, e de que tamanho, sem estudos de campo.</li>
+      </ul>
+    </section>
+  </div>
+</div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="footer-cols">
+          <div>
+            <h2>Quem fez</h2>
+            <p>EcoCidade Bio é um protótipo criado no Projeto Final da disciplina Meio Ambiente, Sustentabilidade e Informática (SPOMASI), IFSP, 2026. Santa Aurora, o córrego e a prefeitura são fictícios.</p>
+          </div>
+          <div>
+            <h2>Transparência</h2>
+            <ul>
+              <li><a href="sobre.html#metodologia">Como o alerta é calculado</a></li>
+              <li><a href="sobre.html#privacidade">O que fazemos com seus dados (LGPD)</a></li>
+              <li><a href="sobre.html#acessibilidade">Acessibilidade do site</a></li>
+              <li><a href="sobre.html#sustentabilidade">Quanto este site consome</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Está sem internet?</h2>
+            <p>Você também pode avisar um problema na Secretaria de Meio Ambiente (fictícia) ou pela central telefônica da prefeitura. Todos os canais caem no mesmo sistema.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

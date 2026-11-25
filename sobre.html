@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre os dados | EcoCidade Bio</title>
+  <meta name="description" content="De onde vêm os dados, como o alerta é calculado, o que fazemos com seus dados (LGPD), acessibilidade e impacto ambiental da plataforma EcoCidade Bio.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2044%2044%22%3E%3Crect%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%2210%22%20fill%3D%22%231351b4%22%2F%3E%3Cpath%20d%3D%22M22%207.5c5%205.2%207.2%209%207.2%2011.9a7.2%207.2%200%200%201-14.4%200c0-2.9%202.2-6.7%207.2-11.9z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M7%2033c3.6-3.2%206.4-3.2%209.6%200s6%203.2%209.6%200%206.4-3.2%209.8%200%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.4%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="sobre">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="app">
+    <header class="sidebar" data-open="false">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect width="44" height="44" rx="10" fill="#1351b4"/><path d="M22 7.5c5 5.2 7.2 9 7.2 11.9a7.2 7.2 0 0 1-14.4 0c0-2.9 2.2-6.7 7.2-11.9z" fill="#fff"/><path d="M7 31.5c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M7 37c3.6-3.2 6.4-3.2 9.6 0s6 3.2 9.6 0 6.4-3.2 9.8 0" fill="none" stroke="#9ec2f0" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span class="brand-text"><span class="brand-name">EcoCidade Bio</span><span class="brand-sub">Córrego das Palmeiras</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-gaveta">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h16M4 12h16M4 17.5h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+
+      <div id="menu-gaveta" class="sidebar-body">
+        <nav class="side-nav" aria-label="Menu principal">
+          <ul>
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Painel</span></a></li>
+          <li><a href="monitoramento.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Pontos de coleta</span></a></li>
+          <li><a href="historico.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7.5 15l3.5-4 3 2.5L19 8"/></svg><span>Gráficos</span></a></li>
+          <li><a href="biotecnologia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c0 4 10 5 10 9s-10 5-10 9"/><path d="M17 3c0 4-10 5-10 9s10 5 10 9"/><path d="M8.6 6.5h6.8M8.6 17.5h6.8"/></svg><span>DNA na água</span></a></li>
+          <li><a href="aprenda.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6v.4"/><path d="M12 17h.01"/></svg><span>Guia e dúvidas</span></a></li>
+          </ul>
+          <ul class="side-nav-action">
+          <li><a class="nav-cta" href="ocorrencia.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4A1.5 1.5 0 0 1 4 14.5z"/><path d="M12 7.5v4"/><path d="M12 13.8h.01"/></svg><span>Avisar um problema</span></a></li>
+          </ul>
+          <ul class="side-nav-more">
+          <li><a href="sobre.html" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg><span>Sobre os dados</span></a></li>
+          <li><a href="admin.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></svg><span>Área do agente</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="reading-tools" role="group" aria-labelledby="rt-titulo">
+          <p id="rt-titulo" class="rt-title">Ajustar a leitura</p>
+          <div class="rt-row">
+            <button type="button" data-acao="fonte-menos" aria-label="Diminuir o texto">A−</button>
+            <button type="button" data-acao="fonte-mais" aria-label="Aumentar o texto">A+</button>
+            <button type="button" data-acao="contraste" aria-pressed="false">Alto contraste</button>
+          </div>
+          <span id="pref-status" class="visually-hidden" role="status"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-main">
+      <div class="proto-line" role="region" aria-label="Aviso sobre o protótipo">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="7.6" r="1.4" fill="currentColor"/></svg>
+        <p><strong>Protótipo acadêmico.</strong> Os dados são simulados e a cidade é fictícia: nada aqui é diagnóstico ambiental oficial.</p>
+      </div>
+
+      <main id="conteudo" tabindex="-1">
+<div class="page">
+  <header class="page-top">
+    <h1>De onde vêm os números e o que fazemos com os seus dados</h1>
+    <p class="page-sub">Aqui contamos como a plataforma funciona, como cuidamos das suas informações e onde ela ainda tem limites.</p>
+  </header>
+
+  <nav class="jump" aria-label="Nesta página">
+    <ul>
+      <li><a href="#metodologia">De onde vêm os números?</a></li>
+      <li><a href="#privacidade">O que fazemos com seus dados?</a></li>
+      <li><a href="#acessibilidade">O site é acessível?</a></li>
+      <li><a href="#sustentabilidade">Quanto este site consome?</a></li>
+      <li><a href="#creditos">Quem fez?</a></li>
+    </ul>
+  </nav>
+
+  <div class="doc">
+    <section id="metodologia" class="doc-section" aria-labelledby="met-t">
+      <h2 id="met-t">De onde vêm os números?</h2>
+      <ul>
+        <li><strong>pH, turbidez e oxigênio dissolvido:</strong> da tabela simulada do estudo de caso “EcoCidade Bio” (três pontos, medições em 02/10, 09/10 e 16/10/2026).</li>
+        <li><strong>Temperatura:</strong> valores simulados pelo grupo para completar a base. Aparecem marcados como “simulado” em todas as telas.</li>
+        <li><strong>DNA ambiental:</strong> resultados simulados de um laboratório parceiro fictício. A data da coleta não foi informada.</li>
+      </ul>
+      <h3>Como o alerta é calculado (passo a passo completo)</h3>
+      <ol>
+        <li>Para cada medição, verificamos: pH &lt; 6,0 ou pH &gt; 9,0; turbidez &gt; 25 NTU; oxigênio dissolvido &lt; 5,0 mg/L.</li>
+        <li>Contamos quantas dessas condições são verdadeiras (de 0 a 3).</li>
+        <li>0 = Sem alerta; 1 = Atenção; 2 ou 3 = Prioridade de investigação.</li>
+        <li>Se faltar alguma leitura e a contagem for menor que 2, mostramos “Classificação incompleta”.</li>
+      </ol>
+      <p>A regra não usa inteligência artificial nem pesos escondidos. Os limites ficam numa tabela do banco de dados e podem ser revistos pela equipe técnica, com registro de cada alteração.</p>
+      <p class="callout note">Os limites são ilustrativos. Eles não bastam para dizer que a água é potável, própria para banho ou que está dentro da lei.</p>
+    </section>
+
+    <section id="privacidade" class="doc-section" aria-labelledby="pri-t">
+      <h2 id="pri-t">O que fazemos com seus dados?</h2>
+      <p>A plataforma segue a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018). Em resumo:</p>
+      <div class="table-wrap" role="region" aria-labelledby="pri-cap" tabindex="0">
+        <table class="table-stack">
+          <caption id="pri-cap">Quais dados usamos e para quê</caption>
+          <thead><tr><th scope="col">Dado</th><th scope="col">É obrigatório?</th><th scope="col">Para quê</th><th scope="col">Por quanto tempo</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Tipo, local, data e descrição do aviso</th><td data-label="É obrigatório?">Sim</td><td data-label="Para quê">Atender e encaminhar o aviso; gerar estatísticas públicas sem identificar ninguém.</td><td data-label="Por quanto tempo">Enquanto for necessário para a gestão ambiental</td></tr>
+            <tr><th scope="row">E-mail</th><td data-label="É obrigatório?">Não</td><td data-label="Para quê">Mandar retorno sobre o aviso, só com a sua autorização (consentimento).</td><td data-label="Por quanto tempo">Apagado quando o atendimento termina</td></tr>
+            <tr><th scope="row">Ajustes de leitura (tamanho do texto, contraste)</th><td data-label="É obrigatório?">Não</td><td data-label="Para quê">Lembrar a sua escolha neste navegador.</td><td data-label="Por quanto tempo">Até você limpar os dados do navegador</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="block">
+        <li><strong>Só o necessário:</strong> não pedimos nome, CPF, telefone nem a localização do seu aparelho.</li>
+        <li><strong>Seus direitos:</strong> você pode pedir para ver, corrigir ou apagar seu e-mail a qualquer momento (art. 18 da LGPD).</li>
+        <li><strong>Divulgação:</strong> mapas e estatísticas públicas nunca mostram e-mails nem descrições que possam identificar alguém.</li>
+        <li><strong>Protótipo:</strong> nesta versão, os avisos ficam salvos só no seu navegador e não vão para nenhum servidor.</li>
+      </ul>
+    </section>
+
+    <section id="acessibilidade" class="doc-section" aria-labelledby="ace-t">
+      <h2 id="ace-t">O site é acessível?</h2>
+      <p>Seguimos a WCAG 2.2, nível AA. O que já está pronto:</p>
+      <div class="panel">
+        <ul class="list-cols">
+          <li>Dá para usar tudo pelo teclado, com foco visível e o atalho “Pular para o conteúdo”.</li>
+          <li>Gráficos vêm com tabela de dados e resumo em palavras.</li>
+          <li>O texto tem contraste de pelo menos 4,5:1, e há a opção de alto contraste.</li>
+          <li>O formulário tem rótulos, instruções e mensagens de erro que dizem como corrigir.</li>
+          <li>Você pode aumentar o texto sem perder conteúdo.</li>
+          <li>O mapa tem alternativa em lista (os quadros dos pontos).</li>
+          <li>A situação de cada ponto aparece com ícone e texto, nunca só pela cor.</li>
+          <li>A linguagem é simples, com glossário das palavras técnicas, e a fonte (Atkinson Hyperlegible Next) foi feita para quem tem baixa visão.</li>
+        </ul>
+      </div>
+      <p class="block"><strong>O que ainda falta:</strong> o protótipo ainda não foi testado com leitores de tela por pessoas com deficiência visual. Esse teste está previsto na avaliação de usabilidade.</p>
+    </section>
+
+    <section id="sustentabilidade" class="doc-section" aria-labelledby="sus-t">
+      <h2 id="sus-t">Quanto este site consome?</h2>
+      <p>Um sistema ambiental também gasta recursos. Por isso, decidimos:</p>
+      <ul>
+        <li>Páginas leves: sem bibliotecas externas, sem vídeos automáticos e com uma única família de fonte, guardada junto com o site (nada é baixado de outros servidores).</li>
+        <li>Funcionar em computadores e celulares antigos, para ninguém precisar trocar de aparelho só para usar o serviço.</li>
+        <li>Sensores que enviam dados em intervalos ajustados à necessidade (não a cada segundo), economizando bateria e rede.</li>
+        <li>Um plano para o fim da vida dos sensores: manutenção preventiva, conserto, reaproveitamento de peças e envio de baterias e placas para a logística reversa.</li>
+      </ul>
+    </section>
+
+    <section id="creditos" class="doc-section" aria-labelledby="cre-t">
+      <h2 id="cre-t">Quem fez?</h2>
+      <p>Este é o Projeto Final da disciplina Meio Ambiente, Sustentabilidade e Informática (SPOMASI), do Instituto Federal de São Paulo, em 2026. Professor: Celso Gonsalez Saes.</p>
+      <p>Grupo: Guilherme Henrique Araujo Pereira, Gustavo da Silva Novais e Kauê Dias da Silva.</p>
+      <p class="muted">Santa Aurora, o Córrego das Palmeiras, a prefeitura e o laboratório são fictícios.</p>
+    </section>
+  </div>
+</div>
+      </main>
+
+      <footer class="app-footer">
+        <div class="footer-cols">
+          <div>
+            <h2>Quem fez</h2>
+            <p>EcoCidade Bio é um protótipo criado no Projeto Final da disciplina Meio Ambiente, Sustentabilidade e Informática (SPOMASI), IFSP, 2026. Santa Aurora, o córrego e a prefeitura são fictícios.</p>
+          </div>
+          <div>
+            <h2>Transparência</h2>
+            <ul>
+              <li><a href="sobre.html#metodologia">Como o alerta é calculado</a></li>
+              <li><a href="sobre.html#privacidade">O que fazemos com seus dados (LGPD)</a></li>
+              <li><a href="sobre.html#acessibilidade">Acessibilidade do site</a></li>
+              <li><a href="sobre.html#sustentabilidade">Quanto este site consome</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Está sem internet?</h2>
+            <p>Você também pode avisar um problema na Secretaria de Meio Ambiente (fictícia) ou pela central telefônica da prefeitura. Todos os canais caem no mesmo sistema.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
